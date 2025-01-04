@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78045E522CD436B9009EA3A1 /* SwipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78045E512CD436B9009EA3A1 /* SwipeCard.swift */; };
+		78045E542CD436F9009EA3A1 /* Swiper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78045E532CD436F9009EA3A1 /* Swiper.swift */; };
+		78045E562CD4859D009EA3A1 /* ContactOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78045E552CD4859D009EA3A1 /* ContactOptionsView.swift */; };
+		78045E622CD48E6F009EA3A1 /* CloudFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78045E612CD48E6F009EA3A1 /* CloudFuncs.swift */; };
+		78045E652CD48F1E009EA3A1 /* LocalStorageFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78045E642CD48F1E009EA3A1 /* LocalStorageFuncs.swift */; };
+		78045E672CD48FAA009EA3A1 /* Structs+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78045E662CD48FAA009EA3A1 /* Structs+Enums.swift */; };
+		78045E6A2CD6C9F8009EA3A1 /* MarkContactedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78045E692CD6C9F8009EA3A1 /* MarkContactedView.swift */; };
+		78045E6C2CD6CE88009EA3A1 /* LocationAutoFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78045E6B2CD6CE88009EA3A1 /* LocationAutoFill.swift */; };
+		78045E6E2CD6DC13009EA3A1 /* ChatGPTFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78045E6D2CD6DC13009EA3A1 /* ChatGPTFuncs.swift */; };
+		78045E702CDAB477009EA3A1 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78045E6F2CDAB477009EA3A1 /* HomeScreenViewModel.swift */; };
+		78045E732CDB0F1F009EA3A1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78045E722CDB0F1F009EA3A1 /* HomeView.swift */; };
+		78045E752CDB232F009EA3A1 /* ContactImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78045E742CDB232F009EA3A1 /* ContactImage.swift */; };
+		78045E782CDB67BC009EA3A1 /* CacheHelperFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78045E772CDB67BC009EA3A1 /* CacheHelperFuncs.swift */; };
+		78045E7A2CDC3F8A009EA3A1 /* SwiperViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78045E792CDC3F8A009EA3A1 /* SwiperViewModel.swift */; };
+		780DDA4F2CF844EE0088873A /* AskAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780DDA4E2CF844EE0088873A /* AskAI.swift */; };
+		78114F992CB6B83C0073E33A /* ImageCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78114F982CB6B83C0073E33A /* ImageCropper.swift */; };
+		78114F9B2CCB63750073E33A /* LocationFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78114F9A2CCB63750073E33A /* LocationFuncs.swift */; };
+		78114F9E2CD1D69D0073E33A /* RecentPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78114F9D2CD1D69D0073E33A /* RecentPictures.swift */; };
+		78114FA02CD407530073E33A /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78114F9F2CD407530073E33A /* NotificationScheduler.swift */; };
+		78362B212CE65FE400B6CC86 /* HomeSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78362B202CE65FE400B6CC86 /* HomeSubViews.swift */; };
+		78362B262CED818000B6CC86 /* HTMLFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78362B252CED818000B6CC86 /* HTMLFetcher.swift */; };
+		78362B282CEE3E2E00B6CC86 /* BriefMeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78362B272CEE3E2E00B6CC86 /* BriefMeTest.swift */; };
+		78362B2A2CEE7AFD00B6CC86 /* AIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78362B292CEE7AFD00B6CC86 /* AIResponse.swift */; };
+		787F70282C878819004EA0F9 /* BirthdayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F70272C878819004EA0F9 /* BirthdayCard.swift */; };
+		787F702E2C894DDD004EA0F9 /* tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F702D2C894DDD004EA0F9 /* tester.swift */; };
+		787F70302C895264004EA0F9 /* ContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F702F2C895264004EA0F9 /* ContactDetail.swift */; };
+		787F70322C895292004EA0F9 /* AddContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F70312C895292004EA0F9 /* AddContact.swift */; };
+		787F70362C8968FB004EA0F9 /* EditContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F70352C8968FB004EA0F9 /* EditContact.swift */; };
+		787F70382C896ABD004EA0F9 /* PickImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F70372C896ABD004EA0F9 /* PickImage.swift */; };
+		787F703A2C8A99C5004EA0F9 /* MiscFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F70392C8A99C5004EA0F9 /* MiscFuncs.swift */; };
+		787F703C2C8CFA35004EA0F9 /* BulkInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F703B2C8CFA35004EA0F9 /* BulkInput.swift */; };
+		789C35A52C7EDD8C002BB136 /* KeepInTouchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C35A42C7EDD8C002BB136 /* KeepInTouchApp.swift */; };
+		789C35A72C7EDD8C002BB136 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C35A62C7EDD8C002BB136 /* ContentView.swift */; };
+		789C35A92C7EDD8D002BB136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789C35A82C7EDD8D002BB136 /* Assets.xcassets */; };
+		789C35AD2C7EDD8E002BB136 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789C35AC2C7EDD8E002BB136 /* Preview Assets.xcassets */; };
+		789C35B72C7EDD8E002BB136 /* KeepInTouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C35B62C7EDD8E002BB136 /* KeepInTouchTests.swift */; };
+		789C35C12C7EDD8E002BB136 /* KeepInTouchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C35C02C7EDD8E002BB136 /* KeepInTouchUITests.swift */; };
+		789C35C32C7EDD8E002BB136 /* KeepInTouchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C35C22C7EDD8E002BB136 /* KeepInTouchUITestsLaunchTests.swift */; };
+		789C35D32C7EDE9E002BB136 /* AllContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C35D22C7EDE9E002BB136 /* AllContacts.swift */; };
+		789C35D52C7EDEAD002BB136 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C35D42C7EDEAD002BB136 /* Settings.swift */; };
+		789C35DA2C7F928A002BB136 /* FavoriteContactCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C35D92C7F928A002BB136 /* FavoriteContactCard.swift */; };
+		789C35DF2C7FDEA9002BB136 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 789C35DE2C7FDEA9002BB136 /* RealmSwift */; };
+		78F652632C8EAD8100B51AF7 /* FavoriteMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F652622C8EAD8100B51AF7 /* FavoriteMain.swift */; };
+		78F652652C8EB06200B51AF7 /* FavoriteHelperFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F652642C8EB06200B51AF7 /* FavoriteHelperFuncs.swift */; };
+		78F652672C8EBC4000B51AF7 /* MessageComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F652662C8EBC3F00B51AF7 /* MessageComposeView.swift */; };
+		78F652682C8FA6E100B51AF7 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 789C35DE2C7FDEA9002BB136 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		78F6526E2C8FD28800B51AF7 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 78F6526D2C8FD28800B51AF7 /* OpenAI */; };
+		78F652702C8FFEBC00B51AF7 /* AISelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F6526F2C8FFEBC00B51AF7 /* AISelectionView.swift */; };
+		78F652722C90EA4100B51AF7 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F652712C90EA4100B51AF7 /* LogInView.swift */; };
+		78F652742C90EBF800B51AF7 /* AuthenticationFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F652732C90EBF800B51AF7 /* AuthenticationFuncs.swift */; };
+		78F6527A2C914A6200B51AF7 /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F652792C914A6200B51AF7 /* UserInformation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		789C35B32C7EDD8E002BB136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 789C35992C7EDD8C002BB136 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 789C35A02C7EDD8C002BB136;
+			remoteInfo = KeepInTouch;
+		};
+		789C35BD2C7EDD8E002BB136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 789C35992C7EDD8C002BB136 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 789C35A02C7EDD8C002BB136;
+			remoteInfo = KeepInTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		78F652692C8FA6E100B51AF7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				78F652682C8FA6E100B51AF7 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		78045E512CD436B9009EA3A1 /* SwipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCard.swift; sourceTree = "<group>"; };
+		78045E532CD436F9009EA3A1 /* Swiper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiper.swift; sourceTree = "<group>"; };
+		78045E552CD4859D009EA3A1 /* ContactOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactOptionsView.swift; sourceTree = "<group>"; };
+		78045E612CD48E6F009EA3A1 /* CloudFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudFuncs.swift; sourceTree = "<group>"; };
+		78045E642CD48F1E009EA3A1 /* LocalStorageFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageFuncs.swift; sourceTree = "<group>"; };
+		78045E662CD48FAA009EA3A1 /* Structs+Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Structs+Enums.swift"; sourceTree = "<group>"; };
+		78045E692CD6C9F8009EA3A1 /* MarkContactedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkContactedView.swift; sourceTree = "<group>"; };
+		78045E6B2CD6CE88009EA3A1 /* LocationAutoFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAutoFill.swift; sourceTree = "<group>"; };
+		78045E6D2CD6DC13009EA3A1 /* ChatGPTFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTFuncs.swift; sourceTree = "<group>"; };
+		78045E6F2CDAB477009EA3A1 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		78045E722CDB0F1F009EA3A1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		78045E742CDB232F009EA3A1 /* ContactImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactImage.swift; sourceTree = "<group>"; };
+		78045E772CDB67BC009EA3A1 /* CacheHelperFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheHelperFuncs.swift; sourceTree = "<group>"; };
+		78045E792CDC3F8A009EA3A1 /* SwiperViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiperViewModel.swift; sourceTree = "<group>"; };
+		780DDA4E2CF844EE0088873A /* AskAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskAI.swift; sourceTree = "<group>"; };
+		78114F982CB6B83C0073E33A /* ImageCropper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropper.swift; sourceTree = "<group>"; };
+		78114F9A2CCB63750073E33A /* LocationFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFuncs.swift; sourceTree = "<group>"; };
+		78114F9D2CD1D69D0073E33A /* RecentPictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentPictures.swift; sourceTree = "<group>"; };
+		78114F9F2CD407530073E33A /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		78362B202CE65FE400B6CC86 /* HomeSubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSubViews.swift; sourceTree = "<group>"; };
+		78362B252CED818000B6CC86 /* HTMLFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLFetcher.swift; sourceTree = "<group>"; };
+		78362B272CEE3E2E00B6CC86 /* BriefMeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefMeTest.swift; sourceTree = "<group>"; };
+		78362B292CEE7AFD00B6CC86 /* AIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIResponse.swift; sourceTree = "<group>"; };
+		787F70272C878819004EA0F9 /* BirthdayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCard.swift; sourceTree = "<group>"; };
+		787F702D2C894DDD004EA0F9 /* tester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tester.swift; sourceTree = "<group>"; };
+		787F702F2C895264004EA0F9 /* ContactDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetail.swift; sourceTree = "<group>"; };
+		787F70312C895292004EA0F9 /* AddContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContact.swift; sourceTree = "<group>"; };
+		787F70352C8968FB004EA0F9 /* EditContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContact.swift; sourceTree = "<group>"; };
+		787F70372C896ABD004EA0F9 /* PickImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickImage.swift; sourceTree = "<group>"; };
+		787F70392C8A99C5004EA0F9 /* MiscFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscFuncs.swift; sourceTree = "<group>"; };
+		787F703B2C8CFA35004EA0F9 /* BulkInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkInput.swift; sourceTree = "<group>"; };
+		789C35A12C7EDD8C002BB136 /* KeepInTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepInTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		789C35A42C7EDD8C002BB136 /* KeepInTouchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepInTouchApp.swift; sourceTree = "<group>"; };
+		789C35A62C7EDD8C002BB136 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		789C35A82C7EDD8D002BB136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		789C35AA2C7EDD8E002BB136 /* KeepInTouch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeepInTouch.entitlements; sourceTree = "<group>"; };
+		789C35AC2C7EDD8E002BB136 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		789C35B22C7EDD8E002BB136 /* KeepInTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeepInTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		789C35B62C7EDD8E002BB136 /* KeepInTouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepInTouchTests.swift; sourceTree = "<group>"; };
+		789C35BC2C7EDD8E002BB136 /* KeepInTouchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeepInTouchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		789C35C02C7EDD8E002BB136 /* KeepInTouchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepInTouchUITests.swift; sourceTree = "<group>"; };
+		789C35C22C7EDD8E002BB136 /* KeepInTouchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepInTouchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		789C35D22C7EDE9E002BB136 /* AllContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllContacts.swift; sourceTree = "<group>"; };
+		789C35D42C7EDEAD002BB136 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		789C35D92C7F928A002BB136 /* FavoriteContactCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteContactCard.swift; sourceTree = "<group>"; };
+		78F652622C8EAD8100B51AF7 /* FavoriteMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMain.swift; sourceTree = "<group>"; };
+		78F652642C8EB06200B51AF7 /* FavoriteHelperFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteHelperFuncs.swift; sourceTree = "<group>"; };
+		78F652662C8EBC3F00B51AF7 /* MessageComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposeView.swift; sourceTree = "<group>"; };
+		78F6526F2C8FFEBC00B51AF7 /* AISelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISelectionView.swift; sourceTree = "<group>"; };
+		78F652712C90EA4100B51AF7 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		78F652732C90EBF800B51AF7 /* AuthenticationFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFuncs.swift; sourceTree = "<group>"; };
+		78F652782C91083B00B51AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78F652792C914A6200B51AF7 /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		789C359E2C7EDD8C002BB136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78F6526E2C8FD28800B51AF7 /* OpenAI in Frameworks */,
+				789C35DF2C7FDEA9002BB136 /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789C35AF2C7EDD8E002BB136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789C35B92C7EDD8E002BB136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78045E502CD43681009EA3A1 /* SwipeView */ = {
+			isa = PBXGroup;
+			children = (
+				78045E532CD436F9009EA3A1 /* Swiper.swift */,
+				78045E512CD436B9009EA3A1 /* SwipeCard.swift */,
+				78045E792CDC3F8A009EA3A1 /* SwiperViewModel.swift */,
+			);
+			path = SwipeView;
+			sourceTree = "<group>";
+		};
+		78045E5A2CD48B5F009EA3A1 /* ContactViews */ = {
+			isa = PBXGroup;
+			children = (
+				78362B222CED799000B6CC86 /* BriefMe */,
+				787F702F2C895264004EA0F9 /* ContactDetail.swift */,
+				78045E742CDB232F009EA3A1 /* ContactImage.swift */,
+				78045E552CD4859D009EA3A1 /* ContactOptionsView.swift */,
+				787F70352C8968FB004EA0F9 /* EditContact.swift */,
+				787F70312C895292004EA0F9 /* AddContact.swift */,
+				787F70372C896ABD004EA0F9 /* PickImage.swift */,
+				78045E692CD6C9F8009EA3A1 /* MarkContactedView.swift */,
+				78114F9F2CD407530073E33A /* NotificationScheduler.swift */,
+				78045E6B2CD6CE88009EA3A1 /* LocationAutoFill.swift */,
+			);
+			path = ContactViews;
+			sourceTree = "<group>";
+		};
+		78045E5B2CD48BD5009EA3A1 /* MainPages */ = {
+			isa = PBXGroup;
+			children = (
+				78045E712CDB0F0D009EA3A1 /* HomeView */,
+				780DDA4D2CF8447D0088873A /* AskAI */,
+				78045E602CD48D49009EA3A1 /* AllContacts */,
+				78045E5F2CD48D39009EA3A1 /* RecentPictures */,
+				78045E5D2CD48C53009EA3A1 /* Settings */,
+			);
+			path = MainPages;
+			sourceTree = "<group>";
+		};
+		78045E5C2CD48C0E009EA3A1 /* MiscViews */ = {
+			isa = PBXGroup;
+			children = (
+				78F652612C8EAD6F00B51AF7 /* FavoriteContacts */,
+				78F652712C90EA4100B51AF7 /* LogInView.swift */,
+				78114F982CB6B83C0073E33A /* ImageCropper.swift */,
+				78F6526F2C8FFEBC00B51AF7 /* AISelectionView.swift */,
+				78F652662C8EBC3F00B51AF7 /* MessageComposeView.swift */,
+				787F702D2C894DDD004EA0F9 /* tester.swift */,
+			);
+			path = MiscViews;
+			sourceTree = "<group>";
+		};
+		78045E5D2CD48C53009EA3A1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				789C35D42C7EDEAD002BB136 /* Settings.swift */,
+				78F652792C914A6200B51AF7 /* UserInformation.swift */,
+				787F703B2C8CFA35004EA0F9 /* BulkInput.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		78045E5E2CD48CD5009EA3A1 /* HelperFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				78F652642C8EB06200B51AF7 /* FavoriteHelperFuncs.swift */,
+				78045E642CD48F1E009EA3A1 /* LocalStorageFuncs.swift */,
+				78045E612CD48E6F009EA3A1 /* CloudFuncs.swift */,
+				78F652732C90EBF800B51AF7 /* AuthenticationFuncs.swift */,
+				78114F9A2CCB63750073E33A /* LocationFuncs.swift */,
+				78045E6D2CD6DC13009EA3A1 /* ChatGPTFuncs.swift */,
+				787F70392C8A99C5004EA0F9 /* MiscFuncs.swift */,
+				78045E772CDB67BC009EA3A1 /* CacheHelperFuncs.swift */,
+			);
+			path = HelperFunctions;
+			sourceTree = "<group>";
+		};
+		78045E5F2CD48D39009EA3A1 /* RecentPictures */ = {
+			isa = PBXGroup;
+			children = (
+				78114F9D2CD1D69D0073E33A /* RecentPictures.swift */,
+			);
+			path = RecentPictures;
+			sourceTree = "<group>";
+		};
+		78045E602CD48D49009EA3A1 /* AllContacts */ = {
+			isa = PBXGroup;
+			children = (
+				789C35D22C7EDE9E002BB136 /* AllContacts.swift */,
+			);
+			path = AllContacts;
+			sourceTree = "<group>";
+		};
+		78045E712CDB0F0D009EA3A1 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				78045E722CDB0F1F009EA3A1 /* HomeView.swift */,
+				78362B202CE65FE400B6CC86 /* HomeSubViews.swift */,
+				78045E6F2CDAB477009EA3A1 /* HomeScreenViewModel.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		780DDA4D2CF8447D0088873A /* AskAI */ = {
+			isa = PBXGroup;
+			children = (
+				780DDA4E2CF844EE0088873A /* AskAI.swift */,
+			);
+			path = AskAI;
+			sourceTree = "<group>";
+		};
+		78362B222CED799000B6CC86 /* BriefMe */ = {
+			isa = PBXGroup;
+			children = (
+				78362B272CEE3E2E00B6CC86 /* BriefMeTest.swift */,
+				78362B292CEE7AFD00B6CC86 /* AIResponse.swift */,
+				78362B252CED818000B6CC86 /* HTMLFetcher.swift */,
+			);
+			path = BriefMe;
+			sourceTree = "<group>";
+		};
+		789C35982C7EDD8C002BB136 = {
+			isa = PBXGroup;
+			children = (
+				789C35A32C7EDD8C002BB136 /* KeepInTouch */,
+				789C35B52C7EDD8E002BB136 /* KeepInTouchTests */,
+				789C35BF2C7EDD8E002BB136 /* KeepInTouchUITests */,
+				789C35A22C7EDD8C002BB136 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		789C35A22C7EDD8C002BB136 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				789C35A12C7EDD8C002BB136 /* KeepInTouch.app */,
+				789C35B22C7EDD8E002BB136 /* KeepInTouchTests.xctest */,
+				789C35BC2C7EDD8E002BB136 /* KeepInTouchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		789C35A32C7EDD8C002BB136 /* KeepInTouch */ = {
+			isa = PBXGroup;
+			children = (
+				789C35AA2C7EDD8E002BB136 /* KeepInTouch.entitlements */,
+				789C35A42C7EDD8C002BB136 /* KeepInTouchApp.swift */,
+				78F652782C91083B00B51AF7 /* Info.plist */,
+				789C35A62C7EDD8C002BB136 /* ContentView.swift */,
+				78045E662CD48FAA009EA3A1 /* Structs+Enums.swift */,
+				789C35A82C7EDD8D002BB136 /* Assets.xcassets */,
+				78045E5B2CD48BD5009EA3A1 /* MainPages */,
+				78045E5A2CD48B5F009EA3A1 /* ContactViews */,
+				78045E502CD43681009EA3A1 /* SwipeView */,
+				78045E5C2CD48C0E009EA3A1 /* MiscViews */,
+				78045E5E2CD48CD5009EA3A1 /* HelperFunctions */,
+				789C35AB2C7EDD8E002BB136 /* Preview Content */,
+			);
+			path = KeepInTouch;
+			sourceTree = "<group>";
+		};
+		789C35AB2C7EDD8E002BB136 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				789C35AC2C7EDD8E002BB136 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		789C35B52C7EDD8E002BB136 /* KeepInTouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				789C35B62C7EDD8E002BB136 /* KeepInTouchTests.swift */,
+			);
+			path = KeepInTouchTests;
+			sourceTree = "<group>";
+		};
+		789C35BF2C7EDD8E002BB136 /* KeepInTouchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				789C35C02C7EDD8E002BB136 /* KeepInTouchUITests.swift */,
+				789C35C22C7EDD8E002BB136 /* KeepInTouchUITestsLaunchTests.swift */,
+			);
+			path = KeepInTouchUITests;
+			sourceTree = "<group>";
+		};
+		78F652612C8EAD6F00B51AF7 /* FavoriteContacts */ = {
+			isa = PBXGroup;
+			children = (
+				78F652622C8EAD8100B51AF7 /* FavoriteMain.swift */,
+				787F70272C878819004EA0F9 /* BirthdayCard.swift */,
+				789C35D92C7F928A002BB136 /* FavoriteContactCard.swift */,
+			);
+			path = FavoriteContacts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		789C35A02C7EDD8C002BB136 /* KeepInTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 789C35C62C7EDD8E002BB136 /* Build configuration list for PBXNativeTarget "KeepInTouch" */;
+			buildPhases = (
+				789C359D2C7EDD8C002BB136 /* Sources */,
+				789C359E2C7EDD8C002BB136 /* Frameworks */,
+				789C359F2C7EDD8C002BB136 /* Resources */,
+				78F652692C8FA6E100B51AF7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeepInTouch;
+			packageProductDependencies = (
+				789C35DE2C7FDEA9002BB136 /* RealmSwift */,
+				78F6526D2C8FD28800B51AF7 /* OpenAI */,
+			);
+			productName = KeepInTouch;
+			productReference = 789C35A12C7EDD8C002BB136 /* KeepInTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		789C35B12C7EDD8E002BB136 /* KeepInTouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 789C35C92C7EDD8E002BB136 /* Build configuration list for PBXNativeTarget "KeepInTouchTests" */;
+			buildPhases = (
+				789C35AE2C7EDD8E002BB136 /* Sources */,
+				789C35AF2C7EDD8E002BB136 /* Frameworks */,
+				789C35B02C7EDD8E002BB136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				789C35B42C7EDD8E002BB136 /* PBXTargetDependency */,
+			);
+			name = KeepInTouchTests;
+			productName = KeepInTouchTests;
+			productReference = 789C35B22C7EDD8E002BB136 /* KeepInTouchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		789C35BB2C7EDD8E002BB136 /* KeepInTouchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 789C35CC2C7EDD8E002BB136 /* Build configuration list for PBXNativeTarget "KeepInTouchUITests" */;
+			buildPhases = (
+				789C35B82C7EDD8E002BB136 /* Sources */,
+				789C35B92C7EDD8E002BB136 /* Frameworks */,
+				789C35BA2C7EDD8E002BB136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				789C35BE2C7EDD8E002BB136 /* PBXTargetDependency */,
+			);
+			name = KeepInTouchUITests;
+			productName = KeepInTouchUITests;
+			productReference = 789C35BC2C7EDD8E002BB136 /* KeepInTouchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		789C35992C7EDD8C002BB136 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					789C35A02C7EDD8C002BB136 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					789C35B12C7EDD8E002BB136 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 789C35A02C7EDD8C002BB136;
+					};
+					789C35BB2C7EDD8E002BB136 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 789C35A02C7EDD8C002BB136;
+					};
+				};
+			};
+			buildConfigurationList = 789C359C2C7EDD8C002BB136 /* Build configuration list for PBXProject "KeepInTouch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 789C35982C7EDD8C002BB136;
+			packageReferences = (
+				789C35DB2C7FDD94002BB136 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				78F6526C2C8FD28800B51AF7 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
+			productRefGroup = 789C35A22C7EDD8C002BB136 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				789C35A02C7EDD8C002BB136 /* KeepInTouch */,
+				789C35B12C7EDD8E002BB136 /* KeepInTouchTests */,
+				789C35BB2C7EDD8E002BB136 /* KeepInTouchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		789C359F2C7EDD8C002BB136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789C35AD2C7EDD8E002BB136 /* Preview Assets.xcassets in Resources */,
+				789C35A92C7EDD8D002BB136 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789C35B02C7EDD8E002BB136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789C35BA2C7EDD8E002BB136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		789C359D2C7EDD8C002BB136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789C35A72C7EDD8C002BB136 /* ContentView.swift in Sources */,
+				78362B262CED818000B6CC86 /* HTMLFetcher.swift in Sources */,
+				78045E782CDB67BC009EA3A1 /* CacheHelperFuncs.swift in Sources */,
+				78F652652C8EB06200B51AF7 /* FavoriteHelperFuncs.swift in Sources */,
+				78045E562CD4859D009EA3A1 /* ContactOptionsView.swift in Sources */,
+				78114FA02CD407530073E33A /* NotificationScheduler.swift in Sources */,
+				78F652742C90EBF800B51AF7 /* AuthenticationFuncs.swift in Sources */,
+				78F652672C8EBC4000B51AF7 /* MessageComposeView.swift in Sources */,
+				78045E6C2CD6CE88009EA3A1 /* LocationAutoFill.swift in Sources */,
+				787F70302C895264004EA0F9 /* ContactDetail.swift in Sources */,
+				78045E732CDB0F1F009EA3A1 /* HomeView.swift in Sources */,
+				787F70282C878819004EA0F9 /* BirthdayCard.swift in Sources */,
+				78114F9E2CD1D69D0073E33A /* RecentPictures.swift in Sources */,
+				78362B212CE65FE400B6CC86 /* HomeSubViews.swift in Sources */,
+				78045E652CD48F1E009EA3A1 /* LocalStorageFuncs.swift in Sources */,
+				789C35DA2C7F928A002BB136 /* FavoriteContactCard.swift in Sources */,
+				78045E672CD48FAA009EA3A1 /* Structs+Enums.swift in Sources */,
+				789C35D32C7EDE9E002BB136 /* AllContacts.swift in Sources */,
+				78F652722C90EA4100B51AF7 /* LogInView.swift in Sources */,
+				787F70382C896ABD004EA0F9 /* PickImage.swift in Sources */,
+				78045E7A2CDC3F8A009EA3A1 /* SwiperViewModel.swift in Sources */,
+				78F652702C8FFEBC00B51AF7 /* AISelectionView.swift in Sources */,
+				780DDA4F2CF844EE0088873A /* AskAI.swift in Sources */,
+				789C35D52C7EDEAD002BB136 /* Settings.swift in Sources */,
+				78045E752CDB232F009EA3A1 /* ContactImage.swift in Sources */,
+				787F703C2C8CFA35004EA0F9 /* BulkInput.swift in Sources */,
+				787F70362C8968FB004EA0F9 /* EditContact.swift in Sources */,
+				78045E6A2CD6C9F8009EA3A1 /* MarkContactedView.swift in Sources */,
+				78114F9B2CCB63750073E33A /* LocationFuncs.swift in Sources */,
+				78362B2A2CEE7AFD00B6CC86 /* AIResponse.swift in Sources */,
+				787F702E2C894DDD004EA0F9 /* tester.swift in Sources */,
+				789C35A52C7EDD8C002BB136 /* KeepInTouchApp.swift in Sources */,
+				78362B282CEE3E2E00B6CC86 /* BriefMeTest.swift in Sources */,
+				78045E522CD436B9009EA3A1 /* SwipeCard.swift in Sources */,
+				78F652632C8EAD8100B51AF7 /* FavoriteMain.swift in Sources */,
+				787F70322C895292004EA0F9 /* AddContact.swift in Sources */,
+				78045E6E2CD6DC13009EA3A1 /* ChatGPTFuncs.swift in Sources */,
+				78045E622CD48E6F009EA3A1 /* CloudFuncs.swift in Sources */,
+				78045E702CDAB477009EA3A1 /* HomeScreenViewModel.swift in Sources */,
+				78045E542CD436F9009EA3A1 /* Swiper.swift in Sources */,
+				78114F992CB6B83C0073E33A /* ImageCropper.swift in Sources */,
+				78F6527A2C914A6200B51AF7 /* UserInformation.swift in Sources */,
+				787F703A2C8A99C5004EA0F9 /* MiscFuncs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789C35AE2C7EDD8E002BB136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789C35B72C7EDD8E002BB136 /* KeepInTouchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789C35B82C7EDD8E002BB136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789C35C32C7EDD8E002BB136 /* KeepInTouchUITestsLaunchTests.swift in Sources */,
+				789C35C12C7EDD8E002BB136 /* KeepInTouchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		789C35B42C7EDD8E002BB136 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 789C35A02C7EDD8C002BB136 /* KeepInTouch */;
+			targetProxy = 789C35B32C7EDD8E002BB136 /* PBXContainerItemProxy */;
+		};
+		789C35BE2C7EDD8E002BB136 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 789C35A02C7EDD8C002BB136 /* KeepInTouch */;
+			targetProxy = 789C35BD2C7EDD8E002BB136 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		789C35C42C7EDD8E002BB136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		789C35C52C7EDD8E002BB136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		789C35C72C7EDD8E002BB136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = KeepInTouch/KeepInTouch.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"KeepInTouch/Preview Content\"";
+				DEVELOPMENT_TEAM = H44T2Z74UM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KeepInTouch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KeepInTouch;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Need to Autofill Contact Information";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Really Need It";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need Location Data";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need Photo Information";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nkakarla.KeepInTouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		789C35C82C7EDD8E002BB136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = KeepInTouch/KeepInTouch.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"KeepInTouch/Preview Content\"";
+				DEVELOPMENT_TEAM = H44T2Z74UM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KeepInTouch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KeepInTouch;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Need to Autofill Contact Information";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Really Need It";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need Location Data";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need Photo Information";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nkakarla.KeepInTouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		789C35CA2C7EDD8E002BB136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nkakarla.KeepInTouchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeepInTouch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeepInTouch";
+			};
+			name = Debug;
+		};
+		789C35CB2C7EDD8E002BB136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nkakarla.KeepInTouchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeepInTouch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeepInTouch";
+			};
+			name = Release;
+		};
+		789C35CD2C7EDD8E002BB136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nkakarla.KeepInTouchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeepInTouch;
+			};
+			name = Debug;
+		};
+		789C35CE2C7EDD8E002BB136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nkakarla.KeepInTouchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeepInTouch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		789C359C2C7EDD8C002BB136 /* Build configuration list for PBXProject "KeepInTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789C35C42C7EDD8E002BB136 /* Debug */,
+				789C35C52C7EDD8E002BB136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		789C35C62C7EDD8E002BB136 /* Build configuration list for PBXNativeTarget "KeepInTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789C35C72C7EDD8E002BB136 /* Debug */,
+				789C35C82C7EDD8E002BB136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		789C35C92C7EDD8E002BB136 /* Build configuration list for PBXNativeTarget "KeepInTouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789C35CA2C7EDD8E002BB136 /* Debug */,
+				789C35CB2C7EDD8E002BB136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		789C35CC2C7EDD8E002BB136 /* Build configuration list for PBXNativeTarget "KeepInTouchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789C35CD2C7EDD8E002BB136 /* Debug */,
+				789C35CE2C7EDD8E002BB136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		789C35DB2C7FDD94002BB136 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		78F6526C2C8FD28800B51AF7 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		789C35DE2C7FDEA9002BB136 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 789C35DB2C7FDD94002BB136 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		78F6526D2C8FD28800B51AF7 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78F6526C2C8FD28800B51AF7 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 789C35992C7EDD8C002BB136 /* Project object */;
+}
